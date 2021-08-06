@@ -1,0 +1,177 @@
+ /* Top Banner */
+ body{
+     margin: 0;
+ }
+ .height{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+.head{
+    grid-template-columns: repeat(2,1fr);
+    background-color: #2D25A0;
+    display: grid;
+    margin-bottom: 70px;
+}
+.half-width  {   
+    width: 420px;
+    height: 230px;
+    padding-left: 70px;
+    padding-top: 100px;
+    padding-bottom: 290px;
+}
+
+.link-button{
+    text-decoration: none;
+    background-image: linear-gradient(orange,tomato);
+    background-color: orangered;
+    color:white ;
+    font-weight: 700px;
+    padding: 10px 40px;
+}
+    
+.half-width img{
+        width: 100%;
+        padding-left: 20px;     
+    }
+
+/* Players Detail */
+    h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    padding-left: 5%;
+    }
+    .three-part img{
+        
+            display: flex;
+            width:90%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 5%;
+        }
+    .three-part p{
+        font-family: 'Poppins';
+        padding-left: 5%;
+        padding-right: 10%;
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .three-part{
+        box-shadow: 10px 10px 40px gray;
+        margin-left: 30px;       
+        margin-bottom: 27px;
+        border-radius: 2px;
+        
+    }
+    .players{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-left:150px;
+        margin-right: 210px;
+    }
+    .bottom{
+        margin-bottom: 120px;
+    }
+        /* Highlights Part */
+    .highlight h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 20px;
+    color: #0A0826;
+   
+    }
+    .highlight{
+        grid-template-columns: repeat(2,1fr);
+        display:grid;
+    }
+    .highlight img{
+        width:400px;
+        height:350px;
+        
+    }
+    .half-width p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    padding-bottom: 15px;
+    }
+
+        /* Footer Part */
+        .logo{
+            display:grid;
+        }
+    .logo img{
+        padding-left: 36%;
+        padding-right: 15%;
+        width: 300px;
+        position: center;
+    }
+    .tool{
+        padding-left:47%;
+        padding-right: 20%;
+        align-items: center;
+    }
+    .fab{padding-right: 8px;
+       }
+    .logo p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color:black;
+    text-align: center;
+    }
+       /* Mobile Devices */
+    @media only screen and (max-width:688px){
+        .players {
+            width: 80%;
+            grid-template-columns: repeat(1, 1fr);
+            margin-left: 10px;     
+            }
+            .three-part{
+                padding-left: 5px;
+            }
+            .half-width img{
+                padding-left: 5px;
+            }
+
+.highlight h1{
+    padding-left: 2px;
+}
+        .head{
+              grid-template-columns: repeat(1, 1fr); 
+        }
+        .highlight{
+            grid-template-columns: repeat(1, 1fr); 
+        }
+        .logo{
+            grid-template-columns: repeat(1, 1fr)} 
+}
+       /* Tablet Devices */
+       @media only screen and (min-width: 688px) and (max-width:992px)
+       {
+        .players {
+            grid-template-columns: repeat(2, 1fr);    
+        }
+        .head{
+            grid-template-columns: repeat(1, 1fr); 
+        }
+        .highlight{
+            grid-template-columns: repeat(1, 1fr); 
+        }
+        .logo img{
+            position: center;
+        }
+       }
